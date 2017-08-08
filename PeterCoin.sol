@@ -35,18 +35,20 @@ contract ERC20Interface {
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
 }
 
-contract FOMOCoin is ERC20Interface {
-    string public constant symbol = "FOMO";
-    string public constant name = "FOMO Coin";
+contract PeterCoin is ERC20Interface {
+    string public constant symbol = "PETER";
+    string public constant name = "Peter Coin";
     uint8 public constant decimals = 0;
-		uint256 public totalSupply = 42000000;
-		uint256 public remainingSupply = 20000000;
+		uint256 public totalSupply = 10000000; 
+		//10,000,000
+		uint256 public remainingSupply = 4999999;
+		//4,999,999
 		uint256 tokenCost = 1000000000000000;
-		uint256 startBlock = 3973365;
-		uint256 public endBlock = 4300000;
+		uint256 startBlock = 4133800;
+		uint256 public endBlock = 4500000;
 
     // Owner of this contract
-    address public owner = 0x314FA670Cd113e0c4168fe0D62355B314dEa4f06;
+    address public owner = 0xE3aBc03D7dfFaf6d5C2De4Aa822B21Fb9c13C86c;
 
     // Balances for each account
     mapping(address => uint256) balances;
@@ -62,8 +64,9 @@ contract FOMOCoin is ERC20Interface {
         _;
     }
 
-    function FOMOCoin () {
-      balances[owner] = 22000000;
+    function PeterCoin () {
+      balances[owner] = 5000001;
+      //5,000,001
     }
 
     function totalSupply() constant returns (uint256 _totalSupply) {
