@@ -44,8 +44,8 @@ contract PeterCoin is ERC20Interface {
 		uint256 public remainingSupply = 4999999;
 		//4,999,999
 		uint256 tokenCost = 1000000000000000;
-		uint256 startBlock = 4133800;
-		uint256 public endBlock = 4500000;
+		uint256 startBlock = 4160000;
+		uint256 public endBlock = 5000000;
 
     // Owner of this contract
     address public owner = 0xE3aBc03D7dfFaf6d5C2De4Aa822B21Fb9c13C86c;
