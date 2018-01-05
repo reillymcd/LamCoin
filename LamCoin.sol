@@ -36,16 +36,16 @@ contract ERC20Interface {
 }
 
 contract PeterCoin is ERC20Interface {
-    string public constant symbol = "PETER";
-    string public constant name = "Peter Coin";
+    string public constant symbol = "LAM";
+    string public constant name = "Lam Coin";
     uint8 public constant decimals = 0;
-		uint256 public totalSupply = 10000000; 
+		uint256 public totalSupply = 4999999; 
 		//10,000,000
-		uint256 public remainingSupply = 4999999;
+		uint256 public remainingSupply = 4000000;
 		//4,999,999
 		uint256 tokenCost = 1000000000000000;
-		uint256 startBlock = 4160000;
-		uint256 public endBlock = 5000000;
+		uint256 startBlock = 485000;
+		uint256 public endBlock = 9000000;
 
     // Owner of this contract
     address public owner = 0xE3aBc03D7dfFaf6d5C2De4Aa822B21Fb9c13C86c;
@@ -64,8 +64,8 @@ contract PeterCoin is ERC20Interface {
         _;
     }
 
-    function PeterCoin () {
-      balances[owner] = 5000001;
+    function LamCoin () {
+      balances[owner] = 999999;
       //5,000,001
     }
 
